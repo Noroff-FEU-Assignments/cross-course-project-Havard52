@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'kanit';
+    src: url('../Fonts/Kanit-Light.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Kanit-italic';
+    src: url('../Fonts/Kanit-Italic.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'kanit-semi-bold';
+    src: url(../Fonts/Kanit-SemiBold.ttf) format(truetype);
+}
+
+body {
+    font-family: 'kanit', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+/*Links*/
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/*HEADER*/
+.top_menu {
+    display: flex;
+    text-decoration: none;
+    text-decoration-color: aliceblue;
+    background-color: #0A3440; 
+}
+
+.logo_menu {
+    display: inline-block;
+    background-color: #E6F5F9;
+    padding: 5px;
+}
+
+.header_logo {
+    max-width: 100px;
+    max-height: 60px;
+}
+
+.logo_menu_li a {
+    align-items: center;
+    text-decoration: none;
+    color: #0A3440;
+}
+
+.search {
+    max-width: 15px;
+    background-color: aliceblue;
+}
+
+.shopping_cart {
+    max-width: 20px;
+}
+.logo_menu {
+    display: flex;
+}
+
+.logo_menu > * {
+    flex: 1;
+}
