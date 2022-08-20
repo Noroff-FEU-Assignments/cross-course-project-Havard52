@@ -31,11 +31,13 @@ h1 {
 h2 {
     color: #0A3440;
     font-weight: 600;
+    margin: 0px;
+    margin-top: 10px;
 }
 
 nav li {
     display: inline-block;
-    padding: 0px 10px;
+    padding: -0px 10px;
 }
 
 /*Links*/
@@ -50,7 +52,7 @@ a {
     border-color: #E6F5F9;
     border-radius: 25px;
     font-weight: 300;
-    font-size: x-small;
+    font-size: small;
 }
 
 .cta2 {
@@ -60,8 +62,8 @@ a {
     border-style: solid;
     border-radius: 25px;
     margin: 2px 5px;
-    font-weight: 400;
-    font-size: small;
+    font-weight: 300;
+    font-size: large;
     box-shadow: 3px 3px #E6F5F9;
 }
 
@@ -70,12 +72,27 @@ a {
     display: flex;
     justify-content: right;
     text-decoration: none;
-    text-decoration-color: aliceblue;
+    color: #F5F5F5;
     background-color: #0A3440; 
-    font-size: x-small;
-    font-weight: 100;
+    font-size: small;
+    font-weight:300;
+    margin: 0px ;
 }
 
+
+.top_menu nav ul {
+    margin: 0px;
+}
+
+.top_menu nav ul img{
+    margin: 0px;
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+    max-width: 15px;
+    max-height: 15px;
+    filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
+}
 
 .logo_menu {
     align-items: center;
@@ -114,20 +131,23 @@ a {
     text-decoration: none;
     color: #0A3440;
     font-weight: 500;
+    font-size: large;
+    margin-left: 5px;
 }
 
 .search {
-    max-width: 15px;
-    max-height: 15px;
+    max-width: 22px;
+    max-height: 22px;
     background-color: white;
     padding: 5px 120px 5px 5px;
     border-radius: 5px;
+    margin-left: 5px;
 }
 
 .shopping_cart {
-    max-width: 20px;
-    max-height: 20px;
-    margin-right: 20px;
+    max-width: 22px;
+    max-height: 22px;
+    margin-right: 40px;
 }
 
 /*Main*/
@@ -147,6 +167,7 @@ a {
     color: #E6F5F9;
     font-weight: x-small;
     font-size: xx-large;
+    padding: 15px;
 }
 
 .shop_now {
@@ -172,7 +193,7 @@ a {
 }
 
 .Product {
-    max-width: 250px;
+    max-width: 200px;
     max-height: 250px;  
 }
 
@@ -250,6 +271,21 @@ a {
 
 footer {
     background-color: #0A3440;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+footer div img{
+    margin: 0px;
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+    max-width: 15px;
+    max-height: 15px;
+    filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
 }
 
 
