@@ -278,6 +278,7 @@ a {
 @media only screen and (max-width: 600px) {
     .end_sales {
         display: flex block;
+        flex-direction: column;
         text-align: center;
     }
     
