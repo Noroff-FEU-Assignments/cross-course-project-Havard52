@@ -76,7 +76,7 @@ a {
     text-decoration: none;
     color: #F5F5F5;
     background-color: #0A3440; 
-    font-size: small;
+    font-size: medium;
     font-weight:300;
     margin: 0px ;
 }
@@ -210,6 +210,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40vh;
+    margin-bottom: 20px;
 }
 
 .Spring_collection h1 {
@@ -378,7 +379,6 @@ a {
         position: relative;
         bottom: 69px;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -414,6 +414,7 @@ a {
     footer {
         background-color: #0A3440;
         display: flex block;
+        flex-direction: column;
         font-weight: 300;
         padding-top: 15px;
         padding-bottom: 40px;
