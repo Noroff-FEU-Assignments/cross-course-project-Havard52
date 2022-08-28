@@ -20,7 +20,10 @@
 
 body {
     font-family: 'kanit', Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;    
+    margin: 0px; 
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;   
 }
 
 h1 {
@@ -259,7 +262,6 @@ a {
     position: relative;
     top: 220px;
     border-width: 1,5px;
-
 }
 }
 
@@ -408,7 +410,6 @@ a {
         max-height: 15px;
         filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
     }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -432,7 +433,5 @@ a {
         filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
     }
 }
-
-
 
 
