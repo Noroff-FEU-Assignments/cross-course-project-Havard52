@@ -26,6 +26,10 @@ body {
     grid-template-rows: auto 1fr auto;   
 }
 
+a i {
+    margin-right: 5px;
+}
+
 h1 {
     font-family: 'playfair'; 
     font-weight: 100;
@@ -45,9 +49,12 @@ nav li {
 }
 
 .productbox img {
+    display: flex;
     max-width: 100%;
     max-height: 170px;
     margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .productname {
@@ -121,6 +128,11 @@ a {
     font-size: medium;
 }
 
+.cta1:hover {
+    background-color: #F5F5F5;
+    color: #0A3440;   
+}
+
 .cta2 {
     color: #0A3440;
     padding: 2px 5px;
@@ -134,7 +146,6 @@ a {
 }
 
 /*HEADER*/
-@media only screen and (min-width: 600px){
 .top_menu  {
     display: flex;
     justify-content: right;
@@ -143,31 +154,21 @@ a {
     background-color: #0A3440; 
     font-size: medium;
     font-weight:300;
-    margin: 0px ;
+    margin: 0px ;   
 }
+
 .top_menu nav ul {
+    margin: 5px;
+}
+.top_menu nav ul li{
     margin: 0px;
     margin-right: 10px;
 }
-        
-.top_menu nav ul img{
-    margin: 0px;
-    position: relative;
-    top: 2px;
-    margin-right: 2px;
-    max-width: 15px;
-    max-height: 15px;
-    filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
-        }
-    }
 
- @media only screen and (max-width: 600px){
-.top_menu {
-    display: none;
-    }
-}
+ .top_menu_elements:hover {
+    color: #CF6300;
+ }
 
-@media only screen and (min-width: 600px) {
 .logo_menu {
     align-items: center;
     display: flex;
@@ -179,6 +180,7 @@ a {
 .l1 {
     flex: 3;
 }
+
 
 .l2 {
     flex: 1;
@@ -198,11 +200,23 @@ a {
 
 .l6 {
     display: none;
+    font-size: x-large
 }
+
 
 .header_logo {
     max-width: 100px;
     max-height: 60px;
+}
+
+.l2 a:hover {
+    border-bottom: solid;
+    border-bottom-color: #0A3440;
+}
+
+.l3 a:hover {
+    border-bottom: solid;
+    border-bottom-color: #0A3440;
 }
 
 .logo_menu_li {
@@ -223,48 +237,10 @@ a {
 }
 
 .shopping_cart {
-    max-width: 22px;
-    max-height: 22px;
-    margin-right: 40px;
-}
-}
-
-@media only screen and (max-width: 600px) {
-.logo_menu{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    background-color: #E6F5F9;
-    padding: 10px;
-}
-
-.header_logo {
-    max-width: 100px;
-    max-height: 60px;
-} 
-    
-.search {
     max-width: 30px;
-    max-height: 30px;
-    margin-right: 5px;
-}
-
-.shopping_cart {
-    max-width: 30px;
-    max-height: 30px;
-    margin-right: 5px;
-}
-
-.burger {
-    max-width: 30px;
-    max-height: 30px;
-}   
 }
 
 /*Main*/
-
-@media only screen and (min-width: 600px){
-
 .Spring_collection {
     display: flex;
     justify-content: center;
@@ -292,68 +268,17 @@ a {
     position: relative;
     bottom: 30px;
 }
-}
-
-@media only screen and (max-width: 600px) {
-.Spring_collection {
-    display: flex;
-    justify-content: left;
-    background-image: url(../images/pexels-atahan-demir-10920821.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    min-height: 50vh;
-}
-
-.Spring_collection h1 {
-    color: #E6F5F9;
-    font-weight: x-small;
-    font-size: xx-large;
-    position: absolute;
-    top: 55px;
-}
-
-.shop_now {
-    padding-top: 50px;
-    position: relative;
-    bottom: 30px;
-    margin-left: 30px;
-}
-
-.shop_now .cta1 {
-    position: relative;
-    top: 220px;
-    border-width: 1,5px;
-}
-}
-
-@media only screen and (min-width: 600px) {
-    .end_sales {
+.end_sales {
         display: flex block;
         text-align: center;
     }
+
     
-    .italic {
+.italic {
         font-style: italic;
         color: #2D515B;
     }
-}
 
-@media only screen and (max-width: 600px) {
-    .end_sales {
-        display: flex block;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .italic {
-        font-style: italic;
-        color: #2D515B;
-    }
-}
-
-
-@media only screen and (min-width: 600px) {
     .products {  
         margin:  auto;
         max-width: 1000px;
@@ -369,61 +294,97 @@ a {
         grid-template-rows: repeat (6, auto);
         grid-template-columns: 170px;
         margin: 10px;
-        grid-auto-rows: 170px 5;
-        justify-content: center;
+        grid-auto-rows: 170px 4;
         padding-bottom: 50px;
     }
-    }
 
-
-@media only screen and (max-width: 600px) {
-    .products {
-        display: none;
-    }    
-}
-
-@media only screen and (min-width: 600px) {
+ 
     footer {
         background-color: #0A3440;
         display: flex;
         justify-content: space-around;
         font-weight: 300;
         padding-top: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         margin-top: 15px;
     }
     
-    footer div img{
-        margin: 0px;
-        position: relative;
-        top: 2px;
-        margin-right: 2px;
-        max-width: 15px;
-        max-height: 15px;
-        filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
+    footer a:hover {
+        color: #CF6300;
     }
-}
 
+/*Media-screen*/
 @media only screen and (max-width: 600px) {
-    footer {
-        background-color: #0A3440;
-        display: flex block;
-        flex-direction: column;
-        font-weight: 300;
-        padding-top: 15px;
-        padding-bottom: 40px;
-        margin-top: 40px;
+    
+    .cta1  {
+        font-size: x-large;
+        border-width: 2px;
+    }  
+    
+    .cta2 {
+        font-size: x-large;
+        padding: 5px 5px;
+        border-width: 2px;
     }
     
-    footer div img{
-        margin: 0px;
+    .top_menu {
+        display: none;
+        }
+
+    .logo_menu_li{
+        display: none;
+    }
+    .search{
+        max-width: 30px;
+        max-height: 30px;
+        margin-right: 5px;
+        background-color: #E6F5F9;
+    }
+
+    .logo_menu {
+        justify-content: right;
+    }
+    .l6 {
+        display:flex
+    }
+
+    .l4 img{
+        padding-right: 5px;
+    }
+    .l4 {
+        flex: 1;
+    }
+
+    .Spring_collection {
+        justify-content: left;
+        background-position-x: center;
+        min-height: 50vh;
+    }
+    .shop_now {
+        margin-left: 30px;
+    }
+    .Spring_collection h1 {
+        position: absolute;
+        padding-left: 0px;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .shop_now .cta1 {
         position: relative;
-        top: 2px;
-        margin-right: 2px;
-        max-width: 15px;
-        max-height: 15px;
-        filter: invert(96%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(117%) contrast(92%);
+        top: 220px;
+    }
+
+    .products {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer div a {
+        margin: 20px;
     }
 }
-
-
