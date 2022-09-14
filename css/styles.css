@@ -76,11 +76,9 @@ span {
 
 .productbox img {
     display: flex;
-    max-width: 100%;
-    max-height: 170px;
+    width: 100%;
+    height: 100%;
     margin-bottom: 5px;
-    justify-content: center;
-    align-items: center;
 }
 
 .productname {
@@ -174,20 +172,16 @@ a {
 .cta1:hover {
     background-color: #F5F5F5;
     color: #0A3440;  
-    font-size: large; 
-    font-weight: 400;
 }
 
 .cta2 {
     color: #0A3440;
-    padding: 2px 5px;
+    padding: 0,5rem 1,5rem;
     border: #0A3440 solid 1px;
-    border-radius: 25px;
-    margin: 3px 5px;
-    font-weight: 400;
+    border-radius: 5rem;
+    font-weight: 2,1em;
     font-size: medium;
-    box-shadow: 3px 3px #E6F5F9;
-    max-width: fit-content;
+    box-shadow: 3px 3px;
 }
 
 .cta2:hover {
@@ -202,26 +196,14 @@ a {
     text-decoration: none;
     color: #F5F5F5;
     background-color: #0A3440; 
-    font-size: medium;
-    font-weight:300;
+    font-size: 1rem;
+    font-weight: 2rem;
     margin: auto;   
-}
-
-.top_menu nav ul {
-    margin: 5px;
-}
-.top_menu nav ul li{
-    margin: 0px;
-    margin-right: 10px;
 }
 
 nav li {
     display: inline-block;
-    padding: -0px 10px;
-}
-
-#hamburger_menu {
-    display: none;
+    margin: 0 1rem;
 }
 
 header label i {
@@ -261,6 +243,10 @@ header label i {
     flex: 1;
 }
 
+.hamburger {
+    flex: 1;
+}
+
 .header_logo {
     max-width: 100px;
     max-height: 60px;
@@ -283,6 +269,15 @@ header label i {
     font-size: large;
     margin-left: 5px;
 }
+
+.mobile-menu {
+   display: none;
+}
+
+#hamburger_menu:checked ~ .mobile-menu {
+    display: block;
+}
+
 
 .search {
     max-width: 22px;
@@ -345,11 +340,9 @@ header label i {
  
 .productbox {
         display: grid;
-        max-width: auto;
         grid-template-rows: repeat (6, auto);
-        grid-template-columns: 170px;
-        margin: 10px;
-        grid-auto-rows: 170px 4;
+        margin: 5%;
+        grid-auto-rows: 170px 1;
         padding-bottom: 50px;
         color: #0A3440;
     }
@@ -394,6 +387,7 @@ input:focus {
 .form_wrap {
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
 .form_wrap * {
@@ -402,11 +396,11 @@ input:focus {
 }
 
 textarea {
-    width: 130%;
+    width: 60%;
 }
 
 textarea:focus {
-    width: 170%;
+    width: 65%;
 }
 
 /*About us*/
@@ -439,6 +433,7 @@ textarea:focus {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
 }
 
 .header_jackets {
@@ -499,14 +494,13 @@ textarea:focus {
     margin: 20px;
     display: flex;
     flex-direction: row;  
-    justify-content: space-between;
+    gap: 15px;
 }
 
 .payment, .card_details {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .contact_page, .Checkout .cta2 {
@@ -534,19 +528,6 @@ textarea:focus {
 
 /*Media-screen*/
 @media only screen and (max-width: 600px) {
-    .cta1  {
-        font-size: x-large;
-        border-width: 2px;
-    }  
-    
-    .cta2 {
-        font-size: x-large;
-        padding: 5px 5px;
-    }
-
-    .top_menu {
-        display: none;
-    }
 
     .logo_menu_li{
         display: none;
@@ -574,6 +555,7 @@ textarea:focus {
     .l2, .l3 {
         display: none;
     }
+
 
     .Spring_collection {
         justify-content: left;
@@ -611,6 +593,14 @@ textarea:focus {
     .thumbnails {
         display: flex;
         flex-direction: row;
+    }
+
+    .contact_info, .shipment_details {
+        flex-wrap: wrap;
+    }
+
+    .payment, .card_details {
+        flex-wrap: wrap;
     }
 }
 
