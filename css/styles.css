@@ -50,6 +50,7 @@ h3 {
     color: #0A3440;
     font-size: 2em;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 h4 {
@@ -176,12 +177,13 @@ a {
 
 .cta2 {
     color: #0A3440;
-    padding: 0,5rem 1,5rem;
+    padding: 8px 15px;
     border: #0A3440 solid 1px;
     border-radius: 5rem;
     font-weight: 2,1em;
     font-size: medium;
     box-shadow: 3px 3px;
+    margin-top: 10px;
 }
 
 .cta2:hover {
@@ -223,27 +225,11 @@ header label i {
     padding: 10px;
 }
 
-.l1 {
+.l1, .l4  {
     flex: 3;
 }
 
-.l2 {
-    flex: 1;
-}
-
-.l3 {
-    flex: 1;
-}
-
-.l4 {
-    flex: 3;
-}
-
-.l5 {
-    flex: 1;
-}
-
-.hamburger {
+.l2, .l3, .l5   {
     flex: 1;
 }
 
@@ -270,14 +256,25 @@ header label i {
     margin-left: 5px;
 }
 
-.mobile-menu {
+.logo_menu nav {
+    background-color: #0A3440;
    display: none;
+   position: fixed; 
+   top: 5rem;
 }
 
-#hamburger_menu:checked ~ .mobile-menu {
+.logo_menu nav li {
+    display: block;
+    margin: 2em ;
+}
+
+#hamburger_menu {
+    display: none;
+}
+
+#hamburger_menu:checked ~ nav {
     display: block;
 }
-
 
 .search {
     max-width: 22px;
@@ -332,7 +329,7 @@ header label i {
 
 .products {  
         margin: auto;
-        max-width: 1200px;
+        max-width: 1000px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 100px;
@@ -444,8 +441,9 @@ textarea:focus {
 .Productspecificpage {
     align-items: center;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 2rem auto;
 }
+
 .Productspecific {
     display: flex;
     align-items: flex-start;
@@ -474,37 +472,42 @@ textarea:focus {
 
 .product_info_content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product_info_content>* {
     flex: 1;
 }
-.product_details {
+.product_details, .productoptions {
     margin: 10px;
 }
 
 /*Checkout*/
 .Checkout {
     align-items: center;
-    max-width: 500px;
+    max-width: 1000px;
     margin:  auto;
+
 }
 
-.contact_info, .shipment_details {
-    margin: 20px;
+.contact_info, .shipment_details, .payment, .expirecvc  {
     display: flex;
     flex-direction: row;  
-    gap: 15px;
+    gap: 2em;
+    margin: 20px;
 }
 
-.payment, .card_details {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.contact_page, .Checkout .cta2, .payment {
+    margin-bottom: 2rem;
 }
 
-.contact_page, .Checkout .cta2 {
-    margin-bottom: 20px;
+#card-number {
+    width: 100%;
+    margin-left: 20px;
+}
+
+#cvc{
+    width: 60%;
 }
 
 /*checkout success*/
@@ -520,7 +523,6 @@ textarea:focus {
 
 .back {
     margin-top: 15px;
-    text-align: center;
     font-size: xx-large;
     color: #0A3440;
 }
@@ -529,6 +531,18 @@ textarea:focus {
 /*Media-screen*/
 @media only screen and (max-width: 600px) {
 
+    .top_menu {
+        display: none;
+    }
+
+    .logo_menu {
+        flex-wrap: wrap;
+    }
+
+    .logo_menu >* {
+        flex: 1;
+    }
+
     .logo_menu_li{
         display: none;
     }
@@ -536,26 +550,20 @@ textarea:focus {
     .search{
         max-width: 30px;
         max-height: 30px;
-        margin-right: 5px;
         background-color: #E6F5F9;
     }
 
-    .logo_menu {
-        justify-content: right;
+    .l1 {
+        margin-right: 2em;
     }
-
-    .l4 img {
-        padding-right: 5px;
-    }
-
+    
     .l4 {
-        flex: 1;
+        width: 0em;
     }
 
     .l2, .l3 {
         display: none;
     }
-
 
     .Spring_collection {
         justify-content: left;
@@ -580,6 +588,7 @@ textarea:focus {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
     }
 
     footer div a {
@@ -595,11 +604,7 @@ textarea:focus {
         flex-direction: row;
     }
 
-    .contact_info, .shipment_details {
-        flex-wrap: wrap;
-    }
-
-    .payment, .card_details {
+    .contact_info, .shipment_details, .payment, .card_details {
         flex-wrap: wrap;
     }
 }

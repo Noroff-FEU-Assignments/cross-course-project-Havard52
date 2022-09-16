@@ -28,16 +28,16 @@
         <div class="l3"><a href="shop.html" class="logo_menu_li">Woman</a></div>
         <div class="l4"><img src="images/outline_search_black_24dp.png"alt="search"  class="search" /></div>
         <div class="l5"><a href="Checkout.html"><img src="images/outline_shopping_cart_black_24dp.png" alt="Shopping cart" class="shopping_cart"/></a></div>
-        <div class="hamburger">
             <input type="checkbox" id="hamburger_menu">
             <label for="hamburger_menu" class="hamburger_menu"><i class="fa-solid fa-bars"></i></label>
-        </div>
-            <div class="mobile-menu">
-                <a href="index.html" class="top_menu_elements"><i class="fa-solid fa-house"></i>Home </a>
-                <a href="Aboutus.html" class="top_menu_elements"><i class="fa-solid fa-users-line"></i>About us</a>
-                <a href="contact.html" class="top_menu_elements"><i class="fa-solid fa-circle-question"></i>Contact</a>
-                <a href="Loginregister.html"class="top_menu_elements"> <i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a> 
-            </div>     
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="top_menu_elements"><i class="fa-solid fa-house"></i>Home </a></li>
+                    <li><a href="Aboutus.html" class="top_menu_elements"><i class="fa-solid fa-users-line"></i>About us</a></li>
+                    <li><a href="contact.html" class="top_menu_elements"><i class="fa-solid fa-circle-question"></i>Contact</a></li>
+                    <li><a href="Loginregister.html"class="top_menu_elements"> <i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a> </li>
+                </ul>
+                </nav>    
             </section>
     </header>
     <main>
@@ -69,7 +69,7 @@
                     </section> 
                     </div> 
                     <h4 class="productname">Shipment details</h4>
-                    <div class="shipment_details">   
+                    <div class="contact_info"> 
                     <section>
                       <label for="City">City</label>
                       <input type="text" name="City"/>
@@ -88,7 +88,7 @@
                     </div>
                         <h4 class="productname">Payment</h4>
                         <p>Payment option:</p>
-                            <div class="payment">
+                            <Section class="payment contact_info">
                                 <div>
                                     <input type="radio" name="Payment_optioin" id="Visa">
                                     <label for="Visa">Visa</label>
@@ -101,20 +101,23 @@
                                     <input type="radio" name="Payment_optioin" id="Paypal">
                                     <label for="Paypal">Paypal</label>
                                 </div>
-                            </div>
-                                <label for="card number">Card number:</label>
-                                <input type="number" name="card number"/>
-                            <div class="card_details">
-                                <div>
-                                    <label for="expire date">Expire date</label>
-                                    <input type="date" name="expire date"/>
-                                </div>
-                                <div>
-                                    <label for="CVC">CVC</label>
-                                    <input type="number" name="CVC"/>
-                                </div>
+                            </section>
+                            <div class="carddetails">
+                                <label for="card number" id="card-number">Card number:</label>
+                                <input type="number" name="card number" id="card-number"/>
+                                <div class="expirecvc">
+                                    <div>
+                                        <label for="expire date">Expire date</label>
+                                        <input type="date" name="expire date" id="expire-date"/>
+                                    </div>
+                                    <div>
+                                        <label for="CVC">CVC</label>
+                                        <input type="text" name="CVC" id="cvc"/>
+                                    </div>
+                                </div> 
                             </div>
                             <a href="Checkoutsuccess.html"><input type="submit" value="Submit" class="cta2" /></a>
+                        </section>                                 
                     </section>
                 </section>
             </section>
