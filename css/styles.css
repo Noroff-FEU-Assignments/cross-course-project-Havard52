@@ -379,6 +379,7 @@ header label i {
     align-items: center;
     max-width: 800px;
     margin:  auto;
+    padding: 20px;
 }
 
 .Drop_down, input, textarea {
@@ -406,7 +407,7 @@ input:focus {
 .form_wrap {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
 }
 
 .form_wrap * {
@@ -414,12 +415,21 @@ input:focus {
     flex-direction: column;
 }
 
+.textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea input {
+    width: 20%;
+}
+
 textarea {
-    width: 60%;
+    width: 50%;
 }
 
 textarea:focus {
-    width: 65%;
+    width: 90%;
 }
 
 /*About us*/
