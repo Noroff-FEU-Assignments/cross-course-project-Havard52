@@ -150,6 +150,10 @@ footer a:hover {
     color: #CF6300;
 }
 
+input[type="submit"] {
+    background: none;
+}
+
 /*Links*/
 a {
     text-decoration: none;
@@ -519,7 +523,7 @@ textarea:focus {
     align-items: center;
     max-width: 1000px;
     margin:  auto;
-
+    padding: 20px;
 }
 
 .contact_info, .shipment_details, .payment, .expirecvc  {
@@ -538,7 +542,7 @@ textarea:focus {
     margin-left: 20px;
 }
 
-#cvc{
+#cvc {
     width: 60%;
 }
 
