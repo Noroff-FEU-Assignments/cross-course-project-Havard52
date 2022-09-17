@@ -276,17 +276,36 @@ header label i {
     display: block;
 }
 
-.search {
-    max-width: 22px;
-    max-height: 22px;
-    background-color: white;
-    padding: 5px 120px 5px 5px;
-    border-radius: 5px;
-    margin-left: 5px;
+.searchbox {    
+    width: 70%;
+    height: 40px;
+    background-color: #ffff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox:hover  {
+    box-shadow: 5px 5px #0A3440;
+}
+
+.l4 i {
+    padding: 10px;
+}
+
+#search {
+    width: 70%;
+    height: 60%;
+    border: none;
+    outline: none;
 }
 
 .shopping_cart {
-    max-width: 30px;
+    max-width: 23px;
+}
+
+.shopping_cart:hover {
+    max-width: 28px;
 }
 
 /*Main*/
@@ -315,10 +334,12 @@ header label i {
         text-align: center;
         margin: auto;
         flex-direction: column;
+        margin: 20px;
+        gap: 18px;
     }
 
-.mw {
-    margin: 15px;
+.mw .cta2{
+    margin: 14px;
 }
   
 .italic {
@@ -365,7 +386,8 @@ header label i {
     padding: 8px 20px 8px 5px;
     font-family: kanit, Verdana, Geneva, Tahoma, sans-serif;
     margin: 5px 0px 10px;
-    color: #2D515B;
+    color: #0A3440;
+    outline: none;
 }
 
 .Drop_down  {
@@ -521,17 +543,43 @@ textarea:focus {
     color: #F5F5F5;
 }
 
-.back {
-    margin-top: 15px;
-    font-size: xx-large;
+#back {
+
+    font-size: 3em;
+}
+
+/*Log in */
+.log_in {
+    align-items: center;
+    max-width: 600px;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     color: #0A3440;
 }
+
+.log_in a {
+    display: block;
+    color: #0A3440;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.log_in div {
+    margin-bottom: 30px;
+}
+
+.log_in input {
+    width: 30%;
+}
+
 
 
 /*Media-screen*/
 @media only screen and (max-width: 600px) {
 
-    .top_menu {
+    .top_menu, #search, .l2, .l3 {
         display: none;
     }
 
@@ -542,27 +590,18 @@ textarea:focus {
     .logo_menu >* {
         flex: 1;
     }
-
-    .logo_menu_li{
-        display: none;
-    }
     
-    .search{
-        max-width: 30px;
-        max-height: 30px;
+    .searchbox {
         background-color: #E6F5F9;
     }
 
+    
+.searchbox:hover  {
+    box-shadow: none;
+}
+
     .l1 {
         margin-right: 2em;
-    }
-    
-    .l4 {
-        width: 0em;
-    }
-
-    .l2, .l3 {
-        display: none;
     }
 
     .Spring_collection {
