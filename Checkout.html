@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RAINYDAYS I Checkout</title>
+    <title>RAINYDAYS | Checkout</title>
     <meta name="Description" content="Buy good quality rainjackets cheap" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" rel="stylesheet" />
@@ -53,76 +53,78 @@
         <section class="Checkout">      
             <h3>Checkout</h3>
             <div class="form_wrap">
-                    <div class="contact_info">
-                    <section>
-                      <label for="First name">First name:</label>
-                      <input type="text" name="First name"/>
-                      <label for="Last name">Last name:</label>
-                      <input type="text" name="Last name"/>
-                      <label for="E-mail">Your e-mail:</label>
-                      <input type="text" name="E-mail"/>
-                      <label for="tel">Your phone:</label>
-                      <input type="tel" />
-                    </section>
-                    <section>
-                        <p class="italic">Gender:</p>
-                        <select name="Gender" class= "Drop_down">
-                        <option value="Female">Female</option>
-                        <option value="Male">Male</option>
-                        <option value="Other">other</option>
-                        </select>
-                    </section> 
-                    </div> 
-                    <h4 class="productname">Shipment details</h4>
-                    <div class="contact_info"> 
-                    <section>
-                      <label for="City">City</label>
-                      <input type="text" name="City"/>
-                      <label for="Adress">Adress:</label>
-                      <input type="text" name="Adress"/>
-                      <label for="Adress">Zip code:</label>
-                      <input type="number" name="Zip xode"/>
-                    </section>
-                    <section>
-                        <p class="italic">Country:</p>
-                        <select name="Country" class="Drop_down">
-                            <option value="AFG">Afghanistan</option>
-                            <option value="IDC">I do not copy code</option>
-                        </select>
-                    </section>
-                    </div>
-                        <h4 class="productname">Payment</h4>
-                        <p>Payment option:</p>
-                            <Section class="payment contact_info">
-                                <div>
-                                    <input type="radio" name="Payment_optioin" id="Visa">
-                                    <label for="Visa">Visa</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="Payment_optioin" id="Mastercard">
-                                    <label for="Mastercard">Mastercard</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="Payment_optioin" id="Paypal">
-                                    <label for="Paypal">Paypal</label>
-                                </div>
-                            </section>
-                            <div class="carddetails">
-                                <label for="card number" id="card-number">Card number:</label>
-                                <input type="number" name="card number" id="card-number"/>
-                                <div class="expirecvc">
+                <div class="contact_info">
+                    <form>
+                        <section>
+                        <label for="First name">First name:</label>
+                        <input type="text" name="First name"/>
+                        <label for="Last name">Last name:</label>
+                        <input type="text" name="Last name"/>
+                        <label for="E-mail">Your e-mail:</label>
+                        <input type="text" name="E-mail"/>
+                        <label for="tel">Your phone:</label>
+                        <input type="tel" />
+                        </section>
+                        <section>
+                            <p class="italic">Gender:</p>
+                            <select name="Gender" class= "Drop_down">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">other</option>
+                            </select>
+                        </section> 
+                        </div> 
+                        <h4 class="productname">Shipment details</h4>
+                        <div class="contact_info"> 
+                        <section>
+                        <label for="City">City</label>
+                        <input type="text" name="City"/>
+                        <label for="Adress">Adress:</label>
+                        <input type="text" name="Adress"/>
+                        <label for="Adress">Zip code:</label>
+                        <input type="number" name="Zip xode"/>
+                        </section>
+                        <section>
+                            <p class="italic">Country:</p>
+                            <select name="Country" class="Drop_down">
+                                <option value="AFG">Afghanistan</option>
+                                <option value="IDC">I do not copy code</option>
+                            </select>
+                        </section>
+                        </div>
+                            <h4 class="productname">Payment</h4>
+                            <p>Payment option:</p>
+                                <Section class="payment contact_info">
                                     <div>
-                                        <label for="expire date">Expire date</label>
-                                        <input type="date" name="expire date" id="expire-date"/>
+                                        <input type="radio" name="Payment_optioin" id="Visa">
+                                        <label for="Visa">Visa</label>
                                     </div>
                                     <div>
-                                        <label for="CVC">CVC</label>
-                                        <input type="text" name="CVC" id="cvc"/>
+                                        <input type="radio" name="Payment_optioin" id="Mastercard">
+                                        <label for="Mastercard">Mastercard</label>
                                     </div>
-                                </div> 
-                            </div>
-                            <a href="Checkoutsuccess.html"><input type="submit" value="Check out" class="cta2" /></a>
-                        </section>                                 
+                                    <div>
+                                        <input type="radio" name="Payment_optioin" id="Paypal">
+                                        <label for="Paypal">Paypal</label>
+                                    </div>
+                                </section>
+                                <div class="carddetails">
+                                    <label for="card number" id="card-number">Card number:</label>
+                                    <input type="number" name="card number" id="card-number"/>
+                                    <div class="expirecvc">
+                                        <div>
+                                            <label for="expire date">Expire date</label>
+                                            <input type="date" name="expire date" id="expire-date"/>
+                                        </div>
+                                        <div>
+                                            <label for="CVC">CVC</label>
+                                            <input type="text" name="CVC" id="cvc"/>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <a href="Checkoutsuccess.html"><input type="submit" value="Check out" class="cta2" /></a>                           
+                            </section>  
+                       </form>                               
                     </section>
                 </section>
             </section>

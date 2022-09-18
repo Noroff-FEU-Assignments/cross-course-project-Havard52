@@ -165,13 +165,15 @@ a {
 }
 
 .cta1 {
-    padding: 1px 15px;
+    padding: 5px 20px;
     border-width: 1px;
     border-style: solid;
     border-color: #E6F5F9;
     border-radius: 25px;
     font-weight: 300;
     font-size: medium;
+    position: relative;
+    display: inline-block;
 }
 
 .cta1:hover {
@@ -204,7 +206,7 @@ a {
     background-color: #0A3440; 
     font-size: 1rem;
     font-weight: 2rem;
-    margin: auto;   
+    margin: auto;
 }
 
 nav li {
@@ -274,6 +276,7 @@ header label i {
 
 #hamburger_menu {
     display: none;
+
 }
 
 #hamburger_menu:checked ~ nav {
@@ -354,10 +357,11 @@ header label i {
 
 .products {  
         margin: auto;
-        max-width: 1000px;
+        max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 100px;
+        gap: 20px;
     }   
  
 .productbox {
