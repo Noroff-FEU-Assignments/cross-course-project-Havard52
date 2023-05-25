@@ -165,7 +165,7 @@ a {
 }
 
 .cta1 {
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-width: 1px;
     border-style: solid;
     border-color: #E6F5F9;
@@ -182,18 +182,18 @@ a {
 }
 
 .cta2 {
-    color: #0A3440;
-    padding: 8px 15px;
-    border: #0A3440 solid 1px;
+    background-color: #CF6300;
+    padding: 15px 40px;
     border-radius: 5rem;
     font-weight: 2,1em;
     font-size: medium;
-    box-shadow: 3px 3px;
-    margin-top: 10px;
+    box-shadow: none;
 }
 
 .cta2:hover {
     background-color: #E6F5F9;
+    color: #0A3440;
+    border: solid 2px ;
     box-shadow: none;
 }
 
@@ -276,11 +276,15 @@ header label i {
 
 #hamburger_menu {
     display: none;
-
 }
 
 #hamburger_menu:checked ~ nav {
     display: block;
+    z-index: 1000; 
+    position: fixed;
+    right: 0;
+
+
 }
 
 .searchbox {    
@@ -339,10 +343,8 @@ header label i {
 .end_sales {
         display: flex;
         text-align: center;
-        margin: auto;
         flex-direction: column;
-        margin: 20px;
-        gap: 18px;
+        margin-bottom: 40px;
     }
 
 .mw .cta2{
@@ -354,6 +356,19 @@ header label i {
         color: #2D515B;
         margin: 0px;   
     }
+
+.sale_header{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.sale {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+    color: #0A3440;
+
+}
 
 .products {  
         margin: auto;
