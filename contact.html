@@ -74,25 +74,37 @@
             </p>
             <h4>Give feedback</h4>
             <div class="form_wrap">
+              <form>
                 <section>
-                  <form>
                     <select name="Feedback_options" class="Drop_down">
                       <option value="Positive feedback">Positive feedback</option>
                       <option value="claims">Claims</option>
                       <option value="Other">Other</option>
                     </select>
-                      <label for="E-mail1">Your e-mail:</label>
-                      <input type="text" name="E-mail1" id="E-mail1"/>
-                      <label for="tele">Your phone:</label>
-                      <input type="tel" name="tele" id="tele"/>
+                    <div>
+                      <label for="E-mail1">E-mail:</label>
+                      <input type="text" name="E-mail1" id="eMailContact"/>
+                      <div class="form-error" id="emailContactError">E-mail must include @ and at least one period</div>
+                    </div>
+                    <div>
+                      <label for="tele">Phone number:</label>
+                      <input type="tel" name="tele" id="teleContact"/>
+                      <div class="form-error" id="teleContactError">The telephone number must contain at least 8 digits</div>
+                    </div>
+                    <div>
                       <label for="Title">Title:</label>
-                      <input type="text" name="Title" id="Title"/>                     
+                      <input type="text" name="Title" id="Title"/>
+                    </div>                     
                 </section>
               </div>
                 <div class="textarea">
-                  <label for="Message">Message:</label>
-                  <textarea name="Message" id="Message" cols="20" rows="10"></textarea>
-                  <input type="submit" value="Submit" class="cta2"/>
+                    <label for="Message">Message:</label>
+                    <textarea name="Message" id="mesageContact" cols="20" rows="10"></textarea>
+                    <div class="form-error" id="messageContactError">The message must be over 20 charters</div>
+                    <div id="contactResponse"></div>   
+                    <div>
+                      <button class="cta2" id="submitButton">Submit message</button>
+                    </div>             
                 </div>
               </form>
             </section>
@@ -104,4 +116,5 @@
               <div><a href="Loginregister.html"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></div>
             </footer>
           </body>
+          <script src="js/contact.js"></script>
         </html>

@@ -67,33 +67,53 @@
                 <div class="contact_info">
                     <form>
                         <section>
-                        <label for="First name">First name:</label>
-                        <input type="text" name="First name"/>
-                        <label for="Last name">Last name:</label>
-                        <input type="text" name="Last name"/>
-                        <label for="E-mail">Your e-mail:</label>
-                        <input type="text" name="E-mail"/>
-                        <label for="tel">Your phone:</label>
-                        <input type="tel" />
+                            <div>
+                                <label for="First name">First name:</label>
+                                <input type="text" id="firstName" name="firstName"/>
+                                <div class="form-error" id="firstNameError">Must be over 0 charters</div>
+                            </div>
+                            <div>
+                                <label for="Last name" >Last name:</label>
+                                <input type="text" id="lastName" name="Last name"/>
+                                <div class="form-error" id="lastNameError">Must be over 0 charters</div>
+                            </div>
+                            <div>
+                                <label for="E-mail">E-mail:</label>
+                                <input type="text" id="email" name="E-mail"/>
+                                <div class="form-error" id="emailError">E-mail must include @ and at least one period</div>
+                            </div>
+                            <div>
+                                <label for="tel">Phonenumber:</label>
+                                <input type="number" id="tel" />
+                                <div class="form-error" id="telError">The telephone number must contain at least 8 digits</div>
+                            </div>
                         </section>
                         <section>
                             <p class="italic">Gender:</p>
                             <select name="Gender" class= "Drop_down">
-                            <option value="Female">Female</option>
-                            <option value="Male">Male</option>
-                            <option value="Other">other</option>
+                                 <option value="Female">Female</option>
+                                 <option value="Male">Male</option>
+                                 <option value="Other">other</option>
                             </select>
                         </section> 
                         </div> 
                         <h4 class="productname">Shipment details</h4>
-                        <div class="contact_info"> 
+                        <div class="contact_info ShipmentDetails"> 
                         <section>
-                        <label for="City">City</label>
-                        <input type="text" name="City"/>
-                        <label for="Adress">Adress:</label>
-                        <input type="text" name="Adress"/>
-                        <label for="Adress">Zip code:</label>
-                        <input type="number" name="Zip xode"/>
+                            <div>
+                                <label for="Zip">Zip code:</label>
+                                <input type="number" id="zip" name="Zip xode"/>
+                                <div class="form-error" id="zipError">The postcode must consist of at least 4 digits</div>
+                            </div>
+                            <div>
+                                <label for="City">City</label>
+                                <input type="text" name="City"/>
+                            </div>
+                            <div>
+                                <label for="Address">Address:</label>
+                                <input type="text" id="adress" name="Adress"/>
+                                <div class="form-error" id="adressError">The address must consist of at least 5 characters</div>
+                            </div>
                         </section>
                         <section>
                             <p class="italic">Country:</p>
@@ -104,7 +124,9 @@
                         </section>
                         </div>
                             <h4 class="productname">Payment</h4>
-                            <p>Payment option:</p>
+                            <div class="align-cardNumber">
+                                <p>Payment options:</p>
+                            </div>
                                 <Section class="payment contact_info">
                                     <div>
                                         <input type="radio" name="Payment_optioin" id="Visa">
@@ -120,8 +142,10 @@
                                     </div>
                                 </section>
                                 <div class="carddetails">
-                                    <label for="card number" id="card-number">Card number:</label>
-                                    <input type="number" name="card number" id="card-number"/>
+                                    <div class="align-cardNumber">
+                                        <label for="card number" id="cardNumber">Card number:</label>
+                                        <input type="number" name="card number" id="cardNumber"/>
+                                    </div>
                                     <div class="expirecvc">
                                         <div>
                                             <label for="expire date">Expire date</label>
@@ -130,10 +154,11 @@
                                         <div>
                                             <label for="CVC">CVC</label>
                                             <input type="text" name="CVC" id="cvc"/>
+                                            <div class="form-error" id="cvcError">The cvc code must consist of at least 3 numbers</div>
                                         </div>
                                     </div> 
                                 </div>
-                                <a href="Checkoutsuccess.html"><input type="submit" value="Check out" class="cta2" /></a>                           
+                                <button class="cta2" id="submit">Check out</button>                          
                             </section>  
                        </form>                               
                     </section>
@@ -147,4 +172,5 @@
             <div><a href="Loginregister.html"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></div>
           </footer>
         </body>
+        <script src="js/checkout.js"></script>
     </html>
