@@ -20,8 +20,7 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-  </head>
-  <body>
+<body>
     <header>
       <section class="top_menu">
       <nav>
@@ -29,7 +28,7 @@
             <li><a href="index.html" class="top_menu_elements"><i class="fa-solid fa-house"></i>Home </a></li>
             <li><a href="Aboutus.html" class="top_menu_elements"><i class="fa-solid fa-users-line"></i>About us</a></li>
             <li><a href="contact.html" class="top_menu_elements"><i class="fa-solid fa-circle-question"></i>Contact</a></li>
-            <li><a href="Loginregister.html" class="top_menu_elements"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></li>
+            <li><a href="Loginregister.html" class="top_menu_elements"> <i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></li>
         </ul>
       </nav> 
       </section>
@@ -43,7 +42,13 @@
             <input type="search" id="search">
           </div>
         </div>
-        <div class="l5"><a href="Checkout.html"><img src="images/outline_shopping_cart_black_24dp.png" alt="Shopping cart" class="shopping_cart"/></a></div>
+        <div class="l5">
+          <a href="Checkout.html">
+            <img src="images/outline_shopping_cart_black_24dp.png" alt="Shopping cart" class="shopping_cart"/>
+            <div class="shoppingCartIndication">
+              <div class="numerOfItems"></div>
+            </div>
+          </a></div>
             <input type="checkbox" id="hamburger_menu">
             <label for="hamburger_menu" class="hamburger_menu"><i class="fa-solid fa-bars"></i></label>
             <nav>
@@ -51,7 +56,7 @@
                     <li><a href="index.html" class="top_menu_elements"><i class="fa-solid fa-house"></i>Home </a></li>
                     <li><a href="Aboutus.html" class="top_menu_elements"><i class="fa-solid fa-users-line"></i>About us</a></li>
                     <li><a href="contact.html" class="top_menu_elements"><i class="fa-solid fa-circle-question"></i>Contact</a></li>
-                    <li><a href="Loginregister.html" class="top_menu_elements"> <i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></li>
+                    <li><a href="Loginregister.html" class="top_menu_elements"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></li>
                 </ul>
               </nav>    
           </section>
@@ -172,5 +177,6 @@
             <div><a href="Loginregister.html"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></div>
           </footer>
         </body>
-        <script src="js/checkout.js"></script>
+     <script src="js/productSpecific.js"></script>
+     <script src="js/checkout.js"></script>
     </html>

@@ -41,7 +41,7 @@ h1 {
 
 h2 {
     color: #0A3440;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0px;
     margin-top: 10px;
 }
@@ -85,8 +85,7 @@ span {
 }
 
 .productname {
-    border-bottom:  #0A3440 solid 1px;
-    padding: 5px;
+    border-bottom:  #0A3440 solid 2px;
 }
 
 .colors {
@@ -127,15 +126,9 @@ span {
 }
 
 .product_des {
-    font-weight: 100;
+    font-weight: 300;
+    font-size: SMALL;
     max-width: fit-content;
-}
-
-.price {
-    font-style: italic;
-    font-weight: 400;
-    font-size: large;
-    margin: 0px;
 }
 
 footer {
@@ -179,13 +172,13 @@ a {
 }
 
 .cta1:hover {
-    background-color: #F5F5F5;
-    color: #0A3440;  
+    background-color: #CF6300;
+    border: #CF6300;
 }
 
 .cta2 {
     background-color: #CF6300;
-    padding: 15px 40px;
+    padding: 15px 15px;
     border-radius: 5rem;
     font-weight: 2,1em;
     font-size: medium;
@@ -197,6 +190,9 @@ a {
     color: #0A3440;
     border: solid 2px ;
     box-shadow: none;
+}
+button {
+    border: 0;
 }
 
 /*HEADER*/
@@ -287,6 +283,10 @@ header label i {
     right: 0;
 }
 
+.hamburger_menu {
+    display: none;
+}
+
 .searchbox {    
     width: 70%;
     height: 40px;
@@ -320,17 +320,17 @@ header label i {
 }
 
 .shoppingCartIndication {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #CF6300;
     position: absolute;
-    display: inline;
     margin: -6px;
+    display: none;
 }
 
 .numerOfItems {
-    margin: auto;
+    margin: -1px 5px;
 }
 
 /*Main*/
@@ -338,7 +338,6 @@ header label i {
     display: flex;
     justify-content: center;
     background-image: url(../images/pexels-atahan-demir-10920821.jpg);
-    padding-top: 5px;
     background-position-y: center;
     background-position-x: right;
     background-repeat: no-repeat;
@@ -347,7 +346,6 @@ header label i {
     max-width: 1200px;
     object-fit: cover;
     margin: auto;
-
 }
 
 .shop_now {
@@ -379,8 +377,6 @@ header label i {
     font-size: xx-large;
 }
 
-
-
 .sale {
     font-size: x-large;
     font-weight: bold;
@@ -393,23 +389,60 @@ header label i {
         max-width: 1200px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-top: 100px;
         gap: 20px;
+        padding: 10px;
+
     }   
  
 .productbox {
-        display: grid;
-        grid-template-rows: repeat (6, auto);
-        margin: 5%;
-        grid-auto-rows: 170px 1;
-        padding-bottom: 50px;
+    background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 10px 30px;
         color: #0A3440;
+        max-width: 234px;
     }
 
+    .productbox div {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .price {
+        font-style: italic;
+        font-weight: bolder;
+        font-size: x-large;
+        text-decoration: line-through;
+        color:#0A3440;
+        text-decoration-thickness: 4px;
+        text-decoration-color: #BA112A;
+        margin: 0px;
+    }
+    
+    .salePrice {
+        font-style: italic;
+        font-weight: large;
+        font-size: x-large;
+        color: #F5F5F5;
+        background-color: #CF6300;
+        padding: 0px 5px;
+        border-radius: 10%;
+        margin: 0px;
+    }
+
+    .header_jackets .salePrice{
+        font-size: xx-large;
+        border-radius: 0%;
+        text-align: center;
+    }
+
+
 .productbox:hover {
-    padding: 5px;
-    border: solid 1px;
+    box-shadow: 2px 4px 8px;
 }
+
 
 .productbox nav div {
     display: inline-block;
@@ -474,6 +507,10 @@ textarea:focus {
 }
 
 /*About us*/
+.main_aboutUs {
+
+}
+
 .about_us {
     background-color: #0A3440;
     color: #ffff;
@@ -497,6 +534,10 @@ textarea:focus {
 }
 
 /*shop*/
+.main_shop {
+    margin: 10px;
+}
+
 .jackets {
     align-items: center;
     max-width: 1200px;
@@ -508,6 +549,10 @@ textarea:focus {
 
 .header_jackets {
     grid-column: 1/-1;
+}
+
+.header_jackets h2 {
+    border-radius: 0%;
 }
 
 /*Product specific*/
@@ -534,6 +579,7 @@ textarea:focus {
     flex-direction: column;
 }
 
+
 .thumbnails img{
     width: 4rem;
 }
@@ -546,13 +592,43 @@ textarea:focus {
 .product_info_content {
     display: flex;
     flex-wrap: wrap;
+    max-width: 500px;
+    gap: 40px;
+}
+
+.product_info_content div {
+    margin-top: 20px;
+}
+
+.priceAndStock {
+    display: flex;
+    flex-direction: column;
+}
+
+.price_div {
+    display: flex;
+    gap: 20px;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+
+.stockWatching {
+    margin: auto;
+    color: #CF6300;
+}
+
+#addedToCartConfirmation {
+    font-size: small;
+    font-weight: medium;
+    color: green;
 }
 
 .product_info_content>* {
     flex: 1;
 }
 .product_details, .productoptions {
-    margin: 10px;
+    margin: 20px;
 }
 
 /*Checkout*/
@@ -645,7 +721,22 @@ button {
 
 
 /*Media-screen*/
+
+
+@media only screen and (max-width: 973px) {
+    .products {
+        display: none;
+    }
+
+    .jackets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    header label{
+        display: none;
+    }
 
     .top_menu, #search, .l2, .l3 {
         display: none;
@@ -664,9 +755,9 @@ button {
     }
 
     
-.searchbox:hover  {
+    .searchbox:hover  {
     box-shadow: none;
-}
+    }
 
     .l1 {
         margin-right: 2em;
@@ -695,7 +786,6 @@ button {
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
 
     footer div a {
@@ -713,20 +803,12 @@ button {
     .contact_info{
         flex-wrap: wrap;
     }
-}
-
-@media only screen and (max-width: 800px) {
-    .products {
-        display: none;
-    }
-
     .jackets {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-}
 
-@media only screen and (min-width: 600px) {
-    header label{
-        display: none;
+    .hamburger_menu {
+        display: block;
+
     }
 }

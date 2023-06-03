@@ -15,6 +15,7 @@ const cvc = document.querySelector ("#cvc");
 const cvcError = document.querySelector ("#cvcError");
 const submit = document.querySelector ("#submit");
 
+
 function checkoutValidation (event) {
     event.preventDefault();
 

@@ -29,7 +29,7 @@
             <li><a href="index.html" class="top_menu_elements"><i class="fa-solid fa-house"></i>Home </a></li>
             <li><a href="Aboutus.html" class="top_menu_elements"><i class="fa-solid fa-users-line"></i>About us</a></li>
             <li><a href="contact.html" class="top_menu_elements"><i class="fa-solid fa-circle-question"></i>Contact</a></li>
-            <li><a href="Loginregister.html" class="top_menu_elements"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></li>
+            <li><a href="Loginregister.html" class="top_menu_elements"> <i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></li>
         </ul>
       </nav> 
       </section>
@@ -43,7 +43,15 @@
             <input type="search" id="search">
           </div>
         </div>
-        <div class="l5"><a href="Checkout.html"><img src="images/outline_shopping_cart_black_24dp.png" alt="Shopping cart" class="shopping_cart"/></a></div>
+        <div class="l5">
+          <a href="Checkout.html">
+            <img src="images/outline_shopping_cart_black_24dp.png" alt="Shopping cart" class="shopping_cart"/>
+            <div class="shoppingCartIndication">
+              <div class="numerOfItems">
+                3
+              </div>
+            </div>
+          </a></div>
             <input type="checkbox" id="hamburger_menu">
             <label for="hamburger_menu" class="hamburger_menu"><i class="fa-solid fa-bars"></i></label>
             <nav>
@@ -79,32 +87,42 @@
             <div class="product_info_content">
                 <div>
                 <p class="italic">Colours:</p>
-                <nav class="colours">
+                  <nav class="colours">
                     <div class="colors"></div>
                     <div class="colors1"></div>
                     <div class="colors2"></div>
                     <div class="colors3"></div>
                 </nav>
-                <p class="italic">Size:</p>
-                <form >
-                  <select name="Size" class="Drop_down">
-                      <option value="X-small">X-small</option>
-                      <option value="Small">Small</option>
-                      <option value="medium">Medium</option>
-                      <option value="Large">Large</option>
-                      <option value="X-large">X-large</option>
-                      <option value="XXL">XXL</option>
-                      <option value="XXXL">XXXL</option>
-                    </select>
-                </form>
+                <div>
+                  <p class="italic">Size:</p>
+                  <form >
+                    <select name="Size" class="Drop_down">
+                        <option value="X-small">X-small</option>
+                        <option value="Small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="X-large">X-large</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XXXL">XXXL</option>
+                      </select>
+                  </form>
+              </div>
                 <p class="product_des">
                  A warm rain jacket. Suitable for rainy days in Cold enviroment
                 </p>
-                <a href="Checkout.html" class="cta2">Add to cart</a> 
-            </div>           
-            <div class="price_div">
-                <p class="price" >69$</p> 
-            </div>
+                <button class="cta2" id="addToCart">Add to cart</button>
+                <div id="addedToCartConfirmation"></div>
+            </div> 
+              <div class="priceAndStock">         
+                <div class="price_div">
+                    <p class="price">69$</p> 
+                    <p class="salePrice">59$</p>                
+                </div>
+                <div class="stockWatching">
+                 <p>1 product left in stock.</p> 
+                 <p>9 others are currently watching the same product.</p>                 
+                </div>
+              </div> 
             </div>    
         </section>        
         </section>
@@ -112,7 +130,7 @@
             <h3 class="productname">Details</h3>
             <h4 class="italic">A warm rain jacket. Suitable for rainy days in Cold enviroment</h4>
             <p class="product_des">
-                The jacket is of top quality. Its suitable for Cold winterdays, and rainy summer Nights. Its perfect for an active lifestyle outdoors.
+                The jacket is of top quality. Its suitable for cold winterdays, and rainy summer nights. Its perfect for an active lifestyle outdoors.
             </p>
             <ul class="product_des">
                 <li >100% waterproof</li>
@@ -142,7 +160,10 @@
                   <p class="product_des">
                     A warm rain jacket. Suitable for rainy days in Cold enviroment
                   </p>
-                  <p class="price">69$</p>
+                  <div>
+                    <p class="price">69$</p> 
+                    <p class="salePrice">59$</p>
+                  </div>
                 </a>
                 <a href="productspecific.html" class="productbox">
                   <img src="images/RainyDays_Jacket2.png" alt="black runner jacket" class="Product"/>
@@ -157,7 +178,10 @@
                   <p class="product_des">
                     A warm rain jacket. Suitable for rainy days in Cold enviroment
                   </p>
-                  <p class="price">69$</p>
+                  <div>
+                    <p class="price">69$</p> 
+                    <p class="salePrice">59$</p>
+                  </div>
                 </a>
                 <a href="productspecific.html" class="productbox">
                   <img src="images/RainyDays_Jacket3.png" alt="Athlete jacket" class="Product"/>
@@ -172,7 +196,10 @@
                   <p class="product_des">
                     A warm rain jacket. Suitable for rainy days in Cold enviroment
                   </p>
-                  <p class="price">69$</p>
+                  <div>
+                    <p class="price">69$</p> 
+                    <p class="salePrice">59$</p>
+                  </div>
                 </a>
                 <a href="productspecific.html" class="productbox">
                   <img src="images/RainyDays_Jacket5.png" alt="Serial killer jacket grey" class="Product" />
@@ -187,7 +214,10 @@
                   <p class="product_des">
                     A warm rain jacket. Suitable for rainy days in Cold enviroment
                   </p>
-                  <p class="price">69$</p>
+                  <div>
+                    <p class="price">69$</p> 
+                    <p class="salePrice">59$</p>
+                  </div>
                 </a>
               </section>
         </Section>
@@ -200,4 +230,5 @@
             <div><a href="Loginregister.html"><i class="fa-solid fa-right-to-bracket"></i>Log in I Register</a></div>
           </footer>
         </body>
+        <script src="js/productSpecific.js"></script>
       </html>
