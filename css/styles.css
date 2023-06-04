@@ -88,6 +88,11 @@ span {
     border-bottom:  #0A3440 solid 2px;
 }
 
+.colorsContainer {
+    display: flex;
+}
+
+
 .colors {
     background-color: #BA112A;
     height: 10px;
@@ -119,10 +124,6 @@ span {
 .colours {
     display: inline-flex;
     gap: 2px;
-}
-
-.products nav div {
-    display: inline-block;
 }
 
 .product_des {
@@ -382,6 +383,7 @@ header label i {
     font-weight: bold;
     font-style: italic;
     color: #0A3440;
+    margin: 5px 0px 30px;
 }
 
 .products {  
