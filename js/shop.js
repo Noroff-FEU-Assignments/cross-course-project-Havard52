@@ -1,7 +1,7 @@
-const baseUrl = "https://rainyvavik.no/Rainydays/wp-json/wc/store/products?per_page=4";
+const baseUrl = "https://rainyvavik.no/Rainydays/wp-json/wc/store/products?per_page=8";
 const proxy = "https://noroffcors.onrender.com/";
 const corsFix = proxy + baseUrl;
-const productContainer = document.querySelector(".products");
+const productContainer = document.querySelector(".jackets");
 
 async function getProducts() {
   try {
@@ -24,8 +24,8 @@ async function getProducts() {
         </nav>
         <p class="product_des">A warm rain jacket. Suitable for rainy days in Cold environment</p>
         <div>
-         <p class="price">$${product.prices.regular_price}</p> 
-          <p class="salePrice">$${product.prices.sale_price}</p>
+        <p class="price">$${product.prices.regular_price}</p> 
+        <p class="salePrice">$${product.prices.sale_price}</p>
         </div>
       </a>`;
     });
@@ -36,7 +36,3 @@ async function getProducts() {
 }
 
 getProducts();
-
-
-
-
