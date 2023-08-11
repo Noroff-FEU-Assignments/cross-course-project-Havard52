@@ -47,12 +47,12 @@ function createHtml (product) {
     <div class="product_info_content">
         <div>
         <p class="italic">Colours:</p>
-          <nav class="colours">
-            <div class="colors"></div>
-            <div class="colors1"></div>
-            <div class="colors2"></div>
-            <div class="colors3"></div>
-        </nav>
+        <select name="Colours" class="Drop_down">
+            <option value="small">${product.attributes[1].terms[0].name}</option>
+            <option value="medium">${product.attributes[1].terms[1].name}</option>
+            <option value="Large">${product.attributes[1].terms[2].name}</option>
+            <option value="X-large">${product.attributes[1].terms[3].name}</option>
+        </select>
         <div>
           <p class="italic">Size:</p>
           <form >

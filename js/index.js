@@ -1,3 +1,10 @@
+const searhField = document.querySelector("#search");
+
+
+
+
+
+
 const baseUrl = "https://rainyvavik.no/Rainydays/wp-json/wc/store/products?per_page=4";
 const proxy = "https://noroffcors.onrender.com/";
 const corsFix = proxy + baseUrl;
@@ -26,7 +33,7 @@ async function getProducts() {
   } catch (error) {
     console.error("Error fetching products:", error);
   }
-  
+
   const productBoxes = document.querySelectorAll(".productbox");
   const sizecContainter = document.querySelectorAll (".productbox");
   
