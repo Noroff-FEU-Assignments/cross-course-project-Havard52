@@ -15,14 +15,7 @@ async function getProducts() {
         <img src="${product.images[0].src}" alt="Athlete jacket" class="Product"/>
         <h2 class="productname">${product.name}</h2>
         <div class="colorsContainer"></div>
-        <p class="italic">Colours:</p>
-        <nav>
-          <div class="colors"></div>
-          <div class="colors1"></div>
-          <div class="colors2"></div>
-          <div class="colors3"></div>
-        </nav>
-        <p class="product_des">A warm rain jacket. Suitable for rainy days in Cold environment</p>
+        <p class="product_des">${product.short_description}</p>
         <div>
          <p class="price">$${product.prices.regular_price}</p> 
           <p class="salePrice">$${product.prices.sale_price}</p>
@@ -33,7 +26,31 @@ async function getProducts() {
   } catch (error) {
     console.error("Error fetching products:", error);
   }
-}
+  
+  const productBoxes = document.querySelectorAll(".productbox");
+  const sizecContainter = document.querySelectorAll (".productbox");
+  
+  productBoxes.forEach(function (productBox) {
+    const colorsContainer = productBox.querySelector(".colorsContainer");
+  
+    productBox.addEventListener("mouseover", function() {
+      colorsContainer.innerHTML = `
+        <p class="italic">Colours:</p>
+        <nav>
+          <div class="colors"></div>
+          <div class="colors1"></div>
+          <div class="colors2"></div>
+          <div class="colors3"></div>
+        </nav>
+      `;
+      }
+    );
+  
+    productBox.addEventListener("mouseout", function (){
+      colorsContainer.innerHTML = "";
+    },1500);
+  });
+};
 
 getProducts();
 

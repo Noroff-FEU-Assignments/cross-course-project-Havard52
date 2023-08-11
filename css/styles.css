@@ -418,7 +418,7 @@ header label i {
         font-size: x-large;
         text-decoration: line-through;
         color:#0A3440;
-        text-decoration-thickness: 4px;
+        text-decoration-thickness: 2px;
         text-decoration-color: #BA112A;
         margin: 0px;
     }
