@@ -2,12 +2,12 @@ const baseUrl = "https://rainyvavik.no/Rainydays/wp-json/wc/store/products?per_p
 const proxy = "https://noroffcors.onrender.com/";
 const corsFix = proxy + baseUrl;
 const productContainer = document.querySelector(".jackets");
+const search = document.querySelector("#search")
 
 async function getProducts() {
   try {
     const response = await fetch(corsFix);
     const products = await response.json();
-    console.log(products);
     products.forEach(function(product) {
 
       productContainer.innerHTML += `
@@ -24,11 +24,11 @@ async function getProducts() {
     });
 
   } catch (error) {
-    console.error("Error fetching products:", error);
+    console.error
+    ("Error fetching the products:", error);
   }
   
-  const productBoxes = document.querySelectorAll(".productbox");
-  const sizecContainter = document.querySelectorAll (".productbox");
+const productBoxes = document.querySelectorAll(".productbox");
   
   productBoxes.forEach(function (productBox) {
     const colorsContainer = productBox.querySelector(".colorsContainer");
@@ -42,14 +42,13 @@ async function getProducts() {
           <div class="colors2"></div>
           <div class="colors3"></div>
         </nav>
-      `;
-      }
-    );
+      `;});
   
     productBox.addEventListener("mouseout", function (){
       colorsContainer.innerHTML = "";
     },1500);
   });
+  
 };
 
 getProducts();

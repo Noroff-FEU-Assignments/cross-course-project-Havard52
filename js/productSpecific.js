@@ -5,8 +5,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-console.log(id);
-
 
 const productContainer = document.querySelector(".Productspecificpage");
 const baseUrl = "https://rainyvavik.no/Rainydays/wp-json/wc/store/products/" + id;
@@ -17,13 +15,12 @@ async function getProduct() {
   try {
     const response = await fetch(corsFix);
     const product = await response.json();
-    console.log(product);
 
     createHtml(product);
   } catch (error) {
-    console.error("Error fetching products:", error);
-  }
-}
+    console.error
+    ("Error fetching products:", error);
+  }}
 
 getProduct();
 
