@@ -1,11 +1,11 @@
-# MealPreppers
+# RainyDays
 
 ![image](images/RainyDays_Logo.png)
 
-MealPreppers - Fitness food for people on the go
+RainyDays - Pushing the comfort zone
 ## Description
 
-My first project exam. The website is built with html, css and javascript. The list of recipes is taken from wordpress's rest api.
+My Cross course project. A website for the fictional brand "RainyDays", which specializes in the sale of rain jackets. The website is built across the courses I attended in the first semester.The website is built with html, css and javascript. The list of jackets is taken from wordpress's rest api.
 
 
 ## Built With
