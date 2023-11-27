@@ -510,10 +510,6 @@ textarea:focus {
 }
 
 /*About us*/
-.main_aboutUs {
-
-}
-
 .about_us {
     background-color: #0A3440;
     color: #ffff;
@@ -720,8 +716,6 @@ button {
 .log_in input {
     width: 30%;
 }
-
-
 
 /*Media-screen*/
 
